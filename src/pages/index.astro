@@ -245,10 +245,25 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
     color: #fff;
     z-index: 2;
   }
+
+@media (max-width: 768px) {
+  .hero-box {
+    left: 1rem;              /* closer to edge */
+    right: 1rem;             /* allow it to breathe symmetrically */
+    bottom: 1rem;
+
+    max-width: none;         /* full available width */
+    padding: 0.9rem 1rem;    /* tighter padding */
+
+    border-radius: 10px;     /* slightly softer */
+  }
+}
+
+
   .hero-text {
     font-size: 1rem;
     line-height: 1.5;
-      font-weight: bold;
+    font-weight: bold;
   }
   .hero-text .move {
     display: inline-block;
@@ -287,7 +302,7 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
 
 @media (max-width: 768px) {
   .below-video-bg {
-    background-image: url("/logo/welcome-background-mob-crop3.jpg");
+    /*background-image: url("/logo/welcome-background-mob-crop3.jpg");*/
     background-attachment: sticky; /* VERY important */
     background-size: cover;
     background-position: center;
@@ -302,7 +317,8 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
   z-index: 0;
   pointer-events: none;
 
-  background-image: url("/logo/welcome-background.jpg");
+  /*background-image: url("/logo/welcome-background.jpg");*/
+      background-color: coral;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +336,8 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
 /* Mobile can use a different crop if you want */
 @media (max-width: 768px) {
   .bg-fixed {
-    background-image: url("/logo/welcome-background-mob-crop.jpg");
+    /*background-image: url("/logo/welcome-background-mob-crop.jpg");*/
+    background-color: coral;
     background-position: center 20%;
   }
 }
@@ -329,7 +346,6 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
     max-width: 980px;
     margin: 0 auto;
     padding: 5rem 1.5rem;
-      background: transparent;
   }
   .hero-intro h1 {
     font-size: clamp(2.2rem, 4vw, 3.2rem);
