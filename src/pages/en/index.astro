@@ -47,12 +47,13 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
 
   <!-- Text box bottom-left on video -->
   <div class="hero-box">
-    <p class="hero-text">
-      We collect
-      <span class="move voices">your participants' voices</span>,
-      making your projects
-      <span class="move impact">maintain momentum and impact further</span>
-    </p>
+<p class="hero-text">
+  We&nbsp;collect&nbsp;
+  <span class="move voices">your participants' voices</span>,
+  making your projects&nbsp;
+  <span class="move impact">maintain momentum and impact further</span>
+</p>
+
   </div>
 
 <div class="ghost-layer">
@@ -331,22 +332,12 @@ const siteTitle = "Civilfilm - Your participants' voices impact further";
     border-radius: 10px;     /* slightly softer */
   }
 
-.hero-box .hero-text {
-  font-size: 0.92rem;
-  line-height: 1.35;
-
-  /* IMPORTANT: stop "single-word lines" */
-  text-wrap: normal;
-
-  /* extra safety */
-  overflow-wrap: normal;
-  word-break: normal;
-}
-@supports (text-wrap: pretty) {
   .hero-box .hero-text {
-    text-wrap: pretty; /* nicer breaks, without the weird balancing */
+    font-size: 0.92rem;
+    line-height: 1.35;
+    text-wrap: normal;     /* stoppa “balance”-beteendet */
+    max-width: 36ch;       /* ger snyggare 2–3 rader */
   }
-}
 }
 
 

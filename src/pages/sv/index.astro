@@ -47,12 +47,12 @@ const siteTitle = "Civilfilm - Era deltagares röster påverkar längre";
 
   <!-- Text box bottom-left on video -->
   <div class="hero-box">
-    <p class="hero-text">
-      Vi samlar in
-      <span class="move voices">era deltagares röster</span>,
-      så att era projekt
-      <span class="move impact">behåller momentum och påverkar längre</span>
-    </p>
+<p class="hero-text">
+  Vi&nbsp;samlar&nbsp;in&nbsp;
+  <span class="move voices">era deltagares röster</span>,
+  så&nbsp;att&nbsp;era&nbsp;projekt&nbsp;
+  <span class="move impact">behåller momentum och påverkar längre</span>
+</p>
   </div>
 
 <div class="ghost-layer">
@@ -329,22 +329,12 @@ const siteTitle = "Civilfilm - Era deltagares röster påverkar längre";
     border-radius: 10px;     /* slightly softer */
   }
 
-.hero-box .hero-text {
-  font-size: 0.92rem;
-  line-height: 1.35;
-
-  /* IMPORTANT: stop "single-word lines" */
-  text-wrap: normal;
-
-  /* extra safety */
-  overflow-wrap: normal;
-  word-break: normal;
-}
-@supports (text-wrap: pretty) {
   .hero-box .hero-text {
-    text-wrap: pretty; /* nicer breaks, without the weird balancing */
+    font-size: 0.92rem;
+    line-height: 1.35;
+    text-wrap: normal;     /* stoppa “balance”-beteendet */
+    max-width: 34ch;       /* ger snyggare 2–3 rader */
   }
-}
 }
 
 
